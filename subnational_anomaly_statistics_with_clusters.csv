@@ -1,0 +1,5 @@
+alpha_3,ADM0_PCODE,ADM0_REF,ADM1_PCODE,ADM1_REF,ADM2_PCODE,ADM2_REF,ADM3_PCODE,ADM3_REF,ADM_LEVEL,ADM_PCODE,ADM_REF,Season,CHIRPS_mean,CHIRPS_min,CHIRPS_max,Cluster
+# Remove any lines that are not data
+# Only keep the header and data rows
+# If you are in your notebook, run this code:
+df.to_csv('subnational_anomaly_statistics_with_clusters.csv', index=False, encoding='utf-8')

@@ -1,0 +1,30 @@
+import pandas as pd
+
+# Load the dataset
+file_path = 'subnational_anomaly_statistics.csv'
+df = pd.read_csv(file_path, header=0)
+
+# Rename columns for Power BI compatibility
+df_renamed = df.rename(columns={
+    'alpha_3': 'Country_Code',
+    'ADM_LEVEL': 'Admin_Level',
+    'ADM_PCODE': 'Admin_PCode',
+    'ADM_REF': 'Admin_Ref',
+    'ADM0_PCODE': 'Admin0_PCode',
+    'ADM0_REF': 'Admin0_Ref',
+    'ADM1_PCODE': 'Admin1_PCode',
+    'ADM1_REF': 'Admin1_Ref',
+    'ADM2_PCODE': 'Admin2_PCode',
+    'ADM2_REF': 'Admin2_Ref',
+    'ADM3_PCODE': 'Admin3_PCode',
+    'ADM3_REF': 'Admin3_Ref',
+    'CHIRPS_max': 'Rainfall_Max',
+    'CHIRPS_mean': 'Rainfall_Mean',
+    'CHIRPS_min': 'Rainfall_Min',
+    'Season': 'Season',
+    'Cluster': 'Cluster'
+})
+
+# Export the renamed DataFrame to CSV for Power BI
+df_renamed.to_csv('subnational_anomaly_statistics_with_clusters_renamed.csv', index=False, encoding='utf-8')
+print('Exported CSV with renamed columns for Power BI.')
