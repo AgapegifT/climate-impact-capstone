@@ -1,4 +1,4 @@
-# 🌍 Climate-Induced Rainfall Extremes & Agricultural Risk in MENA
+# 🌍 Climate-Induced Rainfall Extremes & Agricultural Risk in East Africa
 This capstone project explores how climate change impacts extreme rainfall patterns across the Middle East and North Africa (MENA), using CHIRPS-based exceedance probability data. The goal is to help identify risk-prone regions and support climate resilience and agricultural planning.
 
 ---
